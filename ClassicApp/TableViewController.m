@@ -11,8 +11,8 @@
 #import "Member.h"
 
 @interface TableViewController ()
-@property (nonatomic, retain) NSArray *members;
-@property (nonatomic, retain) NSError *error;
+@property (nonatomic, retain, nullable) NSArray <Member*> *members;
+@property (nonatomic, retain, nullable) NSError *error;
 @end
 
 @implementation TableViewController

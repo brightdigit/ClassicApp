@@ -11,9 +11,9 @@
 
 @implementation Member
 
-static NSDictionary * memberTags = nil;
+static NSDictionary <NSString*, NSNumber*>  * _Nonnull  memberTags = nil;
 
-static NSDictionary * getMemberTags () {
+static NSDictionary <NSString*, NSNumber*>  * _Nonnull  getMemberTags () {
   if (!memberTags) {    
     memberTags = @{
       @"Automotive" : [NSNumber numberWithInt: DefunctMemberTagAutomotive],
@@ -44,7 +44,7 @@ static NSDictionary * getMemberTags () {
   return memberTags;
 }
 
-static NSUInteger parseColorValue(NSString *hexString) {
+static NSUInteger parseColorValue(NSString * _Nullable hexString) {
   if ([[NSNull null] isEqual:hexString]) {
     return 0;
   }
@@ -91,7 +91,7 @@ static NSUInteger parseColorValue(NSString *hexString) {
 }
 
 
-+(DefunctMemberTags) tagsFromStrings: (NSArray *) tags {
++(DefunctMemberTags) tagsFromStrings: (NSArray <NSString*>  * _Nonnull ) tags {
   __block DefunctMemberTags current = 0;
   
   if ([[NSNull null] isEqual:tags]) {

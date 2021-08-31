@@ -34,16 +34,17 @@ typedef NS_OPTIONS(NSInteger, DefunctMemberTags) {
 };
 
 @interface Member : NSObject
--(id)initWithDictionary: (NSDictionary *) dictionary;
-@property (readonly) NSUUID *id;
-@property (readonly) NSString *firstName;
-@property (readonly) NSString *lastName;
-@property (readonly) NSURL *imageURL;
-@property (readonly) NSString *email;
-@property (readonly) NSString *summary;
-@property (readonly) NSDate *createdAt;
+-(id _Nonnull )initWithDictionary: (NSDictionary <NSString*, NSString*> * _Nonnull) dictionary;
+@property (readonly, nonnull) NSUUID *id;
+@property (readonly, nonnull) NSString *firstName;
+@property (readonly, nonnull) NSString *lastName;
+@property (readonly, nullable) NSURL *imageURL;
+@property (readonly, nonnull) NSString *email;
+@property (readonly, nullable) NSString *summary;
+@property (readonly, nonnull) NSDate *createdAt;
 @property (readonly) NSUInteger colorValue;
-@property (readonly) NSString * details;
-@property (readonly) UIColor * uiColor;
+@property (readonly, nullable) NSString * details;
 @property (readonly) DefunctMemberTags tags;
+
+@property (readonly, nonnull) UIColor * uiColor;
 @end
