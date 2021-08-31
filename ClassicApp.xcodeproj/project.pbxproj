@@ -28,7 +28,7 @@
 		B34BF3B427B2AED3007C0DA5 /* Member.UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3B227B2AED3007C0DA5 /* Member.UIKit.swift */; };
 		B34BF3B527B2AED3007C0DA5 /* Member.MemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3B327B2AED3007C0DA5 /* Member.MemberResponse.swift */; };
 		B34BF3B727B2AEE3007C0DA5 /* MemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3B627B2AEE3007C0DA5 /* MemberResponse.swift */; };
-		B34BF3CD27B2BF6B007C0DA5 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3CC27B2BF6B007C0DA5 /* Tag.swift */; };
+		B34BF3CF27B2BFED007C0DA5 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3CE27B2BFED007C0DA5 /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +93,7 @@
 		B34BF3B227B2AED3007C0DA5 /* Member.UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.UIKit.swift; sourceTree = "<group>"; };
 		B34BF3B327B2AED3007C0DA5 /* Member.MemberResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.MemberResponse.swift; sourceTree = "<group>"; };
 		B34BF3B627B2AEE3007C0DA5 /* MemberResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberResponse.swift; sourceTree = "<group>"; };
-		B34BF3CC27B2BF6B007C0DA5 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		B34BF3CE27B2BFED007C0DA5 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +169,7 @@
 				B31676F226DD85FE00982064 /* TableViewController.h */,
 				B31676F326DD85FE00982064 /* TableViewController.m */,
 				B31676F426DD85FE00982064 /* TableViewController.xib */,
-				B34BF3CC27B2BF6B007C0DA5 /* Tag.swift */,
+				B34BF3CE27B2BFED007C0DA5 /* Tag.swift */,
 			);
 			path = ClassicApp;
 			sourceTree = "<group>";
@@ -335,7 +335,7 @@
 				B31676D026DD85D800982064 /* main.m in Sources */,
 				B34BF3B527B2AED3007C0DA5 /* Member.MemberResponse.swift in Sources */,
 				B316772826DDAD4300982064 /* DeprecatedRepository.swift in Sources */,
-				B34BF3CD27B2BF6B007C0DA5 /* Tag.swift in Sources */,
+				B34BF3CF27B2BFED007C0DA5 /* Tag.swift in Sources */,
 				B31676F526DD85FE00982064 /* TableViewController.m in Sources */,
 				B316772226DDA8E300982064 /* Member.swift in Sources */,
 				B316770026DD8E3900982064 /* DefunctMember.m in Sources */,
