@@ -22,11 +22,10 @@
 		B316771D26DD8FBF00982064 /* DefunctFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = B316771C26DD8FBF00982064 /* DefunctFacade.m */; };
 		B316771F26DD9E6000982064 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B316771E26DD9E6000982064 /* data.json */; };
 		B316772226DDA8E300982064 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316772126DDA8E300982064 /* Member.swift */; };
-		B316772426DDA9A100982064 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316772326DDA9A100982064 /* Facade.swift */; };
-		B34BF39727B1D155007C0DA5 /* Member.UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF39627B1D155007C0DA5 /* Member.UIKit.swift */; };
-		B34BF39927B1D185007C0DA5 /* MemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF39827B1D185007C0DA5 /* MemberResponse.swift */; };
-		B34BF39B27B1D4B4007C0DA5 /* Member.MemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF39A27B1D4B4007C0DA5 /* Member.MemberResponse.swift */; };
-		B34BF3BB27B2BBB9007C0DA5 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3BA27B2BBB9007C0DA5 /* Tag.swift */; };
+		B34BF3B427B2AED3007C0DA5 /* Member.UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3B227B2AED3007C0DA5 /* Member.UIKit.swift */; };
+		B34BF3B527B2AED3007C0DA5 /* Member.MemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3B327B2AED3007C0DA5 /* Member.MemberResponse.swift */; };
+		B34BF3B727B2AEE3007C0DA5 /* MemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3B627B2AEE3007C0DA5 /* MemberResponse.swift */; };
+		B34BF3BD27B2BD76007C0DA5 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3BC27B2BD76007C0DA5 /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,11 +84,10 @@
 		B316771E26DD9E6000982064 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		B316772026DDA8E300982064 /* ClassicApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClassicApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		B316772126DDA8E300982064 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
-		B316772326DDA9A100982064 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
-		B34BF39627B1D155007C0DA5 /* Member.UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.UIKit.swift; sourceTree = "<group>"; };
-		B34BF39827B1D185007C0DA5 /* MemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberResponse.swift; sourceTree = "<group>"; };
-		B34BF39A27B1D4B4007C0DA5 /* Member.MemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.MemberResponse.swift; sourceTree = "<group>"; };
-		B34BF3BA27B2BBB9007C0DA5 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		B34BF3B227B2AED3007C0DA5 /* Member.UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.UIKit.swift; sourceTree = "<group>"; };
+		B34BF3B327B2AED3007C0DA5 /* Member.MemberResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.MemberResponse.swift; sourceTree = "<group>"; };
+		B34BF3B627B2AEE3007C0DA5 /* MemberResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberResponse.swift; sourceTree = "<group>"; };
+		B34BF3BC27B2BD76007C0DA5 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +138,7 @@
 		B31676BC26DD85D700982064 /* ClassicApp */ = {
 			isa = PBXGroup;
 			children = (
+				B34BF3BC27B2BD76007C0DA5 /* Tag.swift */,
 				B31676BD26DD85D700982064 /* AppDelegate.h */,
 				B31676BE26DD85D700982064 /* AppDelegate.m */,
 				B31676C926DD85D800982064 /* Assets.xcassets */,
@@ -149,21 +148,19 @@
 				B316771C26DD8FBF00982064 /* DefunctFacade.m */,
 				B31676FE26DD8E3900982064 /* DefunctMember.h */,
 				B31676FF26DD8E3900982064 /* DefunctMember.m */,
-				B316772326DDA9A100982064 /* Facade.swift */,
 				B31676CE26DD85D800982064 /* Info.plist */,
 				B31676CB26DD85D800982064 /* LaunchScreen.storyboard */,
 				B31676CF26DD85D800982064 /* main.m */,
-				B34BF39A27B1D4B4007C0DA5 /* Member.MemberResponse.swift */,
+				B34BF3B327B2AED3007C0DA5 /* Member.MemberResponse.swift */,
 				B316772126DDA8E300982064 /* Member.swift */,
-				B34BF39627B1D155007C0DA5 /* Member.UIKit.swift */,
-				B34BF39827B1D185007C0DA5 /* MemberResponse.swift */,
+				B34BF3B227B2AED3007C0DA5 /* Member.UIKit.swift */,
+				B34BF3B627B2AEE3007C0DA5 /* MemberResponse.swift */,
 				B31676F726DD8B3600982064 /* TableViewCell.h */,
 				B31676F826DD8B3600982064 /* TableViewCell.m */,
 				B31676F926DD8B3600982064 /* TableViewCell.xib */,
 				B31676F226DD85FE00982064 /* TableViewController.h */,
 				B31676F326DD85FE00982064 /* TableViewController.m */,
 				B31676F426DD85FE00982064 /* TableViewController.xib */,
-				B34BF3BA27B2BBB9007C0DA5 /* Tag.swift */,
 			);
 			path = ClassicApp;
 			sourceTree = "<group>";
@@ -249,7 +246,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					B31676B926DD85D700982064 = {
 						CreatedOnToolsVersion = 13.0;
@@ -319,18 +316,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B34BF3BB27B2BBB9007C0DA5 /* Tag.swift in Sources */,
 				B31676BF26DD85D700982064 /* AppDelegate.m in Sources */,
 				B316771D26DD8FBF00982064 /* DefunctFacade.m in Sources */,
-				B34BF39727B1D155007C0DA5 /* Member.UIKit.swift in Sources */,
 				B31676FA26DD8B3600982064 /* TableViewCell.m in Sources */,
-				B316772426DDA9A100982064 /* Facade.swift in Sources */,
+				B34BF3B427B2AED3007C0DA5 /* Member.UIKit.swift in Sources */,
+				B34BF3B727B2AEE3007C0DA5 /* MemberResponse.swift in Sources */,
 				B31676D026DD85D800982064 /* main.m in Sources */,
+				B34BF3BD27B2BD76007C0DA5 /* Tag.swift in Sources */,
+				B34BF3B527B2AED3007C0DA5 /* Member.MemberResponse.swift in Sources */,
 				B31676F526DD85FE00982064 /* TableViewController.m in Sources */,
 				B316772226DDA8E300982064 /* Member.swift in Sources */,
-				B34BF39B27B1D4B4007C0DA5 /* Member.MemberResponse.swift in Sources */,
 				B316770026DD8E3900982064 /* DefunctMember.m in Sources */,
-				B34BF39927B1D185007C0DA5 /* MemberResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +385,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_UNDEFINED_BEHAVIOR_SANITIZER_NULLABILITY = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -449,7 +444,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_UNDEFINED_BEHAVIOR_SANITIZER_NULLABILITY = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;

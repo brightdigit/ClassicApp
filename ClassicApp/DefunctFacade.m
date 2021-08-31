@@ -8,8 +8,8 @@
 #import "DefunctFacade.h"
 #import "DefunctMember.h"
 
-
 static DefunctFacade * _Nonnull obj = nil;
+
 @interface DefunctFacade ()
 
 @property (nonatomic, retain, nonnull) NSArray *currentMembers;

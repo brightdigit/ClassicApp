@@ -44,6 +44,7 @@ static NSDictionary <NSString*, NSNumber*>  * _Nonnull  getMemberTags () {
   return memberTags;
 }
 
+
 static NSUInteger parseColorValue(NSString * _Nullable hexString) {
   if ([[NSNull null] isEqual:hexString]) {
     return 0;
@@ -75,6 +76,7 @@ static NSUInteger parseColorValue(NSString * _Nullable hexString) {
   _details = dictionary[@"details"];
   _tags = [DefunctMember tagsFromStrings: dictionary[@"tags"]];
 
+
   self = [super init];
   return self;
 }
@@ -89,7 +91,6 @@ static NSUInteger parseColorValue(NSString * _Nullable hexString) {
 -(UIColor * _Nonnull) uiColor {
   return [[self class] colorFromValue:self.colorValue];
 }
-
 
 +(DefunctMemberTags) tagsFromStrings: (NSArray <NSString*>  * _Nonnull ) tags {
   __block DefunctMemberTags current = 0;

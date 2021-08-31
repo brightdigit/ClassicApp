@@ -8,13 +8,13 @@
 import Foundation
 
 struct Member {
-
   let id : UUID
   let firstName : String
   let lastName : String
   let imageURL : URL?
   let email : String
   let summary : String?
+
   let createdAt : Date
   let colorValue : Int?
   let details : String?
@@ -32,5 +32,4 @@ struct Member {
     self.details = details
     self.tags = tags
   }
-
 }

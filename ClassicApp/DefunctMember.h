@@ -46,5 +46,6 @@ typedef NS_OPTIONS(NSInteger, DefunctMemberTags) {
 @property (readonly, nullable) NSString * details;
 @property (readonly) DefunctMemberTags tags;
 
+
 @property (readonly, nonnull) UIColor * uiColor;
 @end
