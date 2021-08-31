@@ -32,4 +32,5 @@ struct Member {
     self.details = details
     self.tags = tags
   }
+
 }
