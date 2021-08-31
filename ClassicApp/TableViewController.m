@@ -9,9 +9,10 @@
 #import "TableViewCell.h"
 #import "DefunctFacade.h"
 #import "DefunctMember.h"
+#import "ClassicApp-Swift.h"
 
 @interface TableViewController ()
-@property (nonatomic, retain, nullable) NSArray <DefunctMember*> *members;
+@property (nonatomic, retain, nullable) NSArray <DeprecatedMember*> *members;
 @property (nonatomic, retain, nullable) NSError *error;
 @end
 
@@ -23,7 +24,7 @@
     [self.tableView registerNib:nib forCellReuseIdentifier:@"reuseIdentifier"];
   
   __weak TableViewController *weakSelf = self;
-  [[DefunctFacade sharedObject] getMembers:^(NSArray *members, NSError *error) {
+  [DeprecatedRepository.shared getMembers:^(NSArray *members, NSError *error) {
     weakSelf.members = members;
     weakSelf.error = error;
     [weakSelf.tableView reloadData];
@@ -53,7 +54,7 @@
   
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
-  DefunctMember * member = [self.members objectAtIndex:indexPath.row];
+  DeprecatedMember * member = [self.members objectAtIndex:indexPath.row];
   
   if (member) {
     // Configure the cell...

@@ -23,6 +23,8 @@
 		B316771F26DD9E6000982064 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B316771E26DD9E6000982064 /* data.json */; };
 		B316772226DDA8E300982064 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316772126DDA8E300982064 /* Member.swift */; };
 		B316772426DDA9A100982064 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316772326DDA9A100982064 /* Facade.swift */; };
+		B316772626DDAD3700982064 /* DeprecatedMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316772526DDAD3700982064 /* DeprecatedMember.swift */; };
+		B316772826DDAD4300982064 /* DeprecatedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316772726DDAD4300982064 /* DeprecatedRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		B316772026DDA8E300982064 /* ClassicApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClassicApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		B316772126DDA8E300982064 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		B316772326DDA9A100982064 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
+		B316772526DDAD3700982064 /* DeprecatedMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedMember.swift; sourceTree = "<group>"; };
+		B316772726DDAD4300982064 /* DeprecatedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 				B316772126DDA8E300982064 /* Member.swift */,
 				B316772026DDA8E300982064 /* ClassicApp-Bridging-Header.h */,
 				B316772326DDA9A100982064 /* Facade.swift */,
+				B316772526DDAD3700982064 /* DeprecatedMember.swift */,
+				B316772726DDAD4300982064 /* DeprecatedRepository.swift */,
 			);
 			path = ClassicApp;
 			sourceTree = "<group>";
@@ -311,7 +317,9 @@
 				B316771D26DD8FBF00982064 /* DefunctFacade.m in Sources */,
 				B31676FA26DD8B3600982064 /* TableViewCell.m in Sources */,
 				B316772426DDA9A100982064 /* Facade.swift in Sources */,
+				B316772626DDAD3700982064 /* DeprecatedMember.swift in Sources */,
 				B31676D026DD85D800982064 /* main.m in Sources */,
+				B316772826DDAD4300982064 /* DeprecatedRepository.swift in Sources */,
 				B31676F526DD85FE00982064 /* TableViewController.m in Sources */,
 				B316772226DDA8E300982064 /* Member.swift in Sources */,
 				B316770026DD8E3900982064 /* DefunctMember.m in Sources */,
