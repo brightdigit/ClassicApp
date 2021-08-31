@@ -7,9 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class Member;
 
 @interface Facade : NSObject
-+(Facade*)sharedObject;
--(void)getMembers:(void (^)(NSArray * members, NSError *error))completion;
++(Facade*_Nonnull)sharedObject;
+-(void)getMembers:(void (^_Nonnull)(NSArray <Member*> * _Nullable  members,  NSError * _Nullable error))completion;
 @end
 

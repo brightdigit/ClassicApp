@@ -42,7 +42,7 @@ static Facade *obj = nil;
   return self;
 }
 
-- (void)getMembers:(void (^)(NSArray *, NSError *))completion {
+- (void)getMembers:(void (^)(NSArray<Member *> * _Nullable, NSError * _Nullable))completion {
   NSTimeInterval delayInSeconds = (float)rand() / RAND_MAX * 5 + 3.0;
   dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
 
