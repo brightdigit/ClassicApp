@@ -76,7 +76,6 @@ static NSUInteger parseColorValue(NSString * _Nullable hexString) {
   _details = dictionary[@"details"];
   _tags = [DefunctMember tagsFromStrings: dictionary[@"tags"]];
 
-
   self = [super init];
   return self;
 }
@@ -108,7 +107,7 @@ static NSUInteger parseColorValue(NSString * _Nullable hexString) {
       }
     }];
   }
-  
+
   return current;
 }
 @end
