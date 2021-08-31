@@ -5,9 +5,9 @@
 //  Created by Leo Dion on 8/30/21.
 //
 
-#import "Member.h"
+#import "DefunctMember.h"
 
-@implementation Member
+@implementation DefunctMember
 
 -(id)initWithDictionary:(NSDictionary *)dictionary {
   _id = dictionary[@"id"];

@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Member : NSObject
+@interface DefunctMember : NSObject
 -(id _Nonnull )initWithDictionary: (NSDictionary * _Nonnull) dictionary;
 @property (readonly, nonnull) NSUUID *id;
 @property (readonly, nonnull) NSString *firstName;

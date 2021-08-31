@@ -5,23 +5,23 @@
 //  Created by Leo Dion on 8/30/21.
 //
 
-#import "Facade.h"
-#import "Member.h"
+#import "DefunctFacade.h"
+#import "DefunctMember.h"
 
-static Facade *obj = nil;
-@interface Facade ()
+static DefunctFacade *obj = nil;
+@interface DefunctFacade ()
 
 @property (nonatomic, retain) NSArray *allMembers;
 @property (nonatomic, retain) NSArray *currentMembers;
 
 @end
 
-@implementation Facade
+@implementation DefunctFacade
 @synthesize allMembers;
 
 + (id)sharedObject
 {
-    if (obj == nil) obj = [[Facade alloc] init];
+    if (obj == nil) obj = [[DefunctFacade alloc] init];
     return obj;
 }
 
@@ -31,7 +31,7 @@ static Facade *obj = nil;
   NSArray * membersJSON = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
   NSMutableArray * mutAllMembers = [NSMutableArray arrayWithCapacity:membersJSON.count];
   [membersJSON enumerateObjectsUsingBlock:^(NSDictionary * obj, NSUInteger idx, BOOL * stop) {
-    [mutAllMembers addObject: [[Member alloc] initWithDictionary: obj]];
+    [mutAllMembers addObject: [[DefunctMember alloc] initWithDictionary: obj]];
   }];
   self.allMembers = [NSArray arrayWithArray:mutAllMembers];
   
@@ -42,7 +42,7 @@ static Facade *obj = nil;
   return self;
 }
 
-- (void)getMembers:(void (^)(NSArray<Member *> * _Nullable, NSError * _Nullable))completion {
+- (void)getMembers:(void (^)(NSArray<DefunctMember *> * _Nullable, NSError * _Nullable))completion {
   NSTimeInterval delayInSeconds = (float)rand() / RAND_MAX * 5 + 3.0;
   dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
 
