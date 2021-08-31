@@ -8,18 +8,6 @@
 import Foundation
 import UIKit
 
-extension Double {
-  init?(hexCodeScanner: Scanner) {
-    var value : Double = 0.0
-    hexCodeScanner.scanLocation = 1
-    if hexCodeScanner.scanHexDouble(&value) {
-      self.init(value)
-    } else {
-      return nil
-    }
-  }
-}
-
 extension UIColor {
   convenience init(value: Int, alpha: CGFloat = 1.0) {
     self.init(
