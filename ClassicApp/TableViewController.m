@@ -7,11 +7,11 @@
 
 #import "TableViewController.h"
 #import "TableViewCell.h"
-#import "Facade.h"
-#import "Member.h"
+#import "DefunctFacade.h"
+#import "DefunctMember.h"
 
 @interface TableViewController ()
-@property (nonatomic, retain, nullable) NSArray <Member*> *members;
+@property (nonatomic, retain, nullable) NSArray <DefunctMember*> *members;
 @property (nonatomic, retain, nullable) NSError *error;
 @end
 
@@ -23,7 +23,7 @@
   [self.tableView registerNib:nib forCellReuseIdentifier:@"reuseIdentifier"];
   
   __weak TableViewController *weakSelf = self;
-  [[Facade sharedObject] getMembers:^(NSArray *members, NSError *error) {
+  [[DefunctFacade sharedObject] getMembers:^(NSArray *members, NSError *error) {
     weakSelf.members = members;
     weakSelf.error = error;
     [weakSelf.tableView reloadData];
@@ -41,8 +41,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   
   TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
-  
-  Member * member = [self.members objectAtIndex:indexPath.row];
+ 
+  DefunctMember * member = [self.members objectAtIndex:indexPath.row];
   
   if (member && cell) {
     cell.nameLabel.text = member.firstName;

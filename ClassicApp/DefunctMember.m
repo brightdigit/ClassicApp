@@ -7,9 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "Member.h"
+#import "DefunctMember.h"
 
-@implementation Member
+@implementation DefunctMember
 
 static NSDictionary <NSString*, NSNumber*>  * _Nonnull  memberTags = nil;
 
@@ -73,7 +73,7 @@ static NSUInteger parseColorValue(NSString * _Nullable hexString) {
   _colorValue = parseColorValue(hexString);
 
   _details = dictionary[@"details"];
-  _tags = [Member tagsFromStrings: dictionary[@"tags"]];
+  _tags = [DefunctMember tagsFromStrings: dictionary[@"tags"]];
 
   self = [super init];
   return self;

@@ -33,7 +33,7 @@ typedef NS_OPTIONS(NSInteger, DefunctMemberTags) {
   DefunctMemberTagToys = 1 << 21
 };
 
-@interface Member : NSObject
+@interface DefunctMember : NSObject
 -(id _Nonnull )initWithDictionary: (NSDictionary <NSString*, NSString*> * _Nonnull) dictionary;
 @property (readonly, nonnull) NSUUID *id;
 @property (readonly, nonnull) NSString *firstName;
