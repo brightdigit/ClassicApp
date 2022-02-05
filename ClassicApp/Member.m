@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "Member.h"
 
 @implementation Member
@@ -42,5 +43,16 @@ static NSUInteger parseColorValue(NSString *hexString) {
   
   self = [super init];
   return self;
+}
+
++ (UIColor *)colorFromValue:(NSUInteger) value {
+  return [UIColor colorWithRed:((CGFloat) ((value & 0xFF0000) >> 16))/255
+                                            green:((CGFloat) ((value & 0xFF00) >> 8))/255
+                                            blue:((CGFloat) (value & 0xFF))/255
+                         alpha: 255.0];
+}
+
+-(UIColor *) uiColor {
+  return [[self class] colorFromValue:self.colorValue];
 }
 @end

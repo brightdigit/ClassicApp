@@ -38,7 +38,6 @@
   return self.members.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   
   TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
@@ -46,13 +45,8 @@
   Member * member = [self.members objectAtIndex:indexPath.row];
   
   if (member) {
-    // Configure the cell...
     cell.nameLabel.text = member.firstName;
-    
-    cell.nameLabel.textColor =  [UIColor colorWithRed:((CGFloat) ((member.colorValue & 0xFF0000) >> 16))/255
-                                                green:((CGFloat) ((member.colorValue & 0xFF00) >> 8))/255
-                                                blue:((CGFloat) (member.colorValue & 0xFF))/255
-                                                alpha: 255.0];
+    cell.nameLabel.textColor = member.uiColor;
   }
   
   return cell;

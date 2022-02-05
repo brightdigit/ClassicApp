@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 
 @interface Member : NSObject
 -(id)initWithDictionary: (NSDictionary *) dictionary;
@@ -20,4 +20,6 @@
 @property (readonly) NSUInteger colorValue;
 @property (readonly) NSString * details;
 @property (readonly) NSArray * tags;
+
+@property (readonly) UIColor * uiColor;
 @end
