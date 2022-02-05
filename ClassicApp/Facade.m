@@ -11,13 +11,13 @@
 static Facade *obj = nil;
 @interface Facade ()
 
-@property (nonatomic, retain) NSArray *allMembers;
 @property (nonatomic, retain) NSArray *currentMembers;
 
 @end
 
 @implementation Facade
-@synthesize allMembers;
+
+static NSArray * allMembers = nil;
 
 + (id)sharedObject
 {
@@ -25,7 +25,7 @@ static Facade *obj = nil;
     return obj;
 }
 
--(id)init {
+static NSArray *parseAllMembers() {
   NSURL * url = [NSBundle.mainBundle URLForResource:@"data" withExtension:@"json"];
   NSData * data = [NSData dataWithContentsOfURL:url];
   NSArray * membersJSON = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
@@ -33,11 +33,21 @@ static Facade *obj = nil;
   [membersJSON enumerateObjectsUsingBlock:^(NSDictionary * obj, NSUInteger idx, BOOL * stop) {
     [mutAllMembers addObject: [[Member alloc] initWithDictionary: obj]];
   }];
-  self.allMembers = [NSArray arrayWithArray:mutAllMembers];
-  
+  return [NSArray arrayWithArray:mutAllMembers];
+}
+
+static NSArray *extractRandomMembers(NSArray *allMembers) {
   int count = 20 + arc4random_uniform(10);
   int index = arc4random_uniform(1000 - count);
-  self.currentMembers = [self.allMembers subarrayWithRange:NSMakeRange(index, count)];
+  return [allMembers subarrayWithRange:NSMakeRange(index, count)];
+}
+
+-(id)init {
+  if (allMembers == nil) {
+    allMembers = parseAllMembers();
+  }
+  
+  self.currentMembers = extractRandomMembers(allMembers);
   self = [super init];
   return self;
 }
