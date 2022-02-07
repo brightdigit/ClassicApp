@@ -25,7 +25,8 @@
 		B34BF3B427B2AED3007C0DA5 /* Member.UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3B227B2AED3007C0DA5 /* Member.UIKit.swift */; };
 		B34BF3B527B2AED3007C0DA5 /* Member.MemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3B327B2AED3007C0DA5 /* Member.MemberResponse.swift */; };
 		B34BF3B727B2AEE3007C0DA5 /* MemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3B627B2AEE3007C0DA5 /* MemberResponse.swift */; };
-		B34BF3BD27B2BD76007C0DA5 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3BC27B2BD76007C0DA5 /* Tag.swift */; };
+		B34BF3BF27B2BDDA007C0DA5 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3BE27B2BDD9007C0DA5 /* Tag.swift */; };
+		B34BF3C127B2BDE4007C0DA5 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3C027B2BDE4007C0DA5 /* Facade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +88,8 @@
 		B34BF3B227B2AED3007C0DA5 /* Member.UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.UIKit.swift; sourceTree = "<group>"; };
 		B34BF3B327B2AED3007C0DA5 /* Member.MemberResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.MemberResponse.swift; sourceTree = "<group>"; };
 		B34BF3B627B2AEE3007C0DA5 /* MemberResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberResponse.swift; sourceTree = "<group>"; };
-		B34BF3BC27B2BD76007C0DA5 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		B34BF3BE27B2BDD9007C0DA5 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		B34BF3C027B2BDE4007C0DA5 /* Facade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +140,6 @@
 		B31676BC26DD85D700982064 /* ClassicApp */ = {
 			isa = PBXGroup;
 			children = (
-				B34BF3BC27B2BD76007C0DA5 /* Tag.swift */,
 				B31676BD26DD85D700982064 /* AppDelegate.h */,
 				B31676BE26DD85D700982064 /* AppDelegate.m */,
 				B31676C926DD85D800982064 /* Assets.xcassets */,
@@ -148,6 +149,7 @@
 				B316771C26DD8FBF00982064 /* DefunctFacade.m */,
 				B31676FE26DD8E3900982064 /* DefunctMember.h */,
 				B31676FF26DD8E3900982064 /* DefunctMember.m */,
+				B34BF3C027B2BDE4007C0DA5 /* Facade.swift */,
 				B31676CE26DD85D800982064 /* Info.plist */,
 				B31676CB26DD85D800982064 /* LaunchScreen.storyboard */,
 				B31676CF26DD85D800982064 /* main.m */,
@@ -161,6 +163,7 @@
 				B31676F226DD85FE00982064 /* TableViewController.h */,
 				B31676F326DD85FE00982064 /* TableViewController.m */,
 				B31676F426DD85FE00982064 /* TableViewController.xib */,
+				B34BF3BE27B2BDD9007C0DA5 /* Tag.swift */,
 			);
 			path = ClassicApp;
 			sourceTree = "<group>";
@@ -319,10 +322,11 @@
 				B31676BF26DD85D700982064 /* AppDelegate.m in Sources */,
 				B316771D26DD8FBF00982064 /* DefunctFacade.m in Sources */,
 				B31676FA26DD8B3600982064 /* TableViewCell.m in Sources */,
+				B34BF3C127B2BDE4007C0DA5 /* Facade.swift in Sources */,
 				B34BF3B427B2AED3007C0DA5 /* Member.UIKit.swift in Sources */,
 				B34BF3B727B2AEE3007C0DA5 /* MemberResponse.swift in Sources */,
 				B31676D026DD85D800982064 /* main.m in Sources */,
-				B34BF3BD27B2BD76007C0DA5 /* Tag.swift in Sources */,
+				B34BF3BF27B2BDDA007C0DA5 /* Tag.swift in Sources */,
 				B34BF3B527B2AED3007C0DA5 /* Member.MemberResponse.swift in Sources */,
 				B31676F526DD85FE00982064 /* TableViewController.m in Sources */,
 				B316772226DDA8E300982064 /* Member.swift in Sources */,

@@ -11,6 +11,7 @@ import UIKit
 protocol Repository {
   func getMembers (_ completion: @escaping (Result<[Member], Error>) -> Void)
 }
+
 class RepositoryImpl : Repository {
   let allMembers : [Member]
   let currentMembers : [Member]
