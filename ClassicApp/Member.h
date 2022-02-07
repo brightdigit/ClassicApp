@@ -19,7 +19,7 @@
 @property (readonly, nonnull) NSDate *createdAt;
 @property (readonly) NSUInteger colorValue;
 @property (readonly, nullable) NSString * details;
-@property (readonly, nonnull) NSArray * tags;
+@property (readonly, nonnull) NSArray <NSString*> * tags;
 
 @property (readonly, nonnull) UIColor * uiColor;
 @end
