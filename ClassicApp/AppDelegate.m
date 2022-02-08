@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TableViewController.h"
+#import "ClassicApp-Swift.h"
 
 @interface AppDelegate ()
 @end
