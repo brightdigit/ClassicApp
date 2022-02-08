@@ -44,9 +44,20 @@
   
   Member * member = [self.members objectAtIndex:indexPath.row];
   
-  if (member) {
+  if (member && cell) {
     cell.nameLabel.text = member.firstName;
     cell.nameLabel.textColor = member.uiColor;
+
+    NSLog(@"%@", member.id);
+    NSLog(@"%@", member.firstName);
+    NSLog(@"%@", member.lastName);
+    NSLog(@"%@", member.imageURL);
+    NSLog(@"%@", member.email);
+    NSLog(@"%@", member.summary);
+    NSLog(@"%@", member.createdAt);
+    NSLog(@"%lu", (unsigned long)member.colorValue);
+    NSLog(@"%@", member.details);
+    NSLog(@"%ld", (long)member.tags);
   }
   
   return cell;

@@ -127,23 +127,23 @@
 		B31676BC26DD85D700982064 /* ClassicApp */ = {
 			isa = PBXGroup;
 			children = (
-				B316771E26DD9E6000982064 /* data.json */,
 				B31676BD26DD85D700982064 /* AppDelegate.h */,
 				B31676BE26DD85D700982064 /* AppDelegate.m */,
 				B31676C926DD85D800982064 /* Assets.xcassets */,
-				B31676CB26DD85D800982064 /* LaunchScreen.storyboard */,
+				B316771E26DD9E6000982064 /* data.json */,
+				B316771B26DD8FBF00982064 /* Facade.h */,
+				B316771C26DD8FBF00982064 /* Facade.m */,
+				B31676FE26DD8E3900982064 /* Member.h */,
+				B31676FF26DD8E3900982064 /* Member.m */,
 				B31676CE26DD85D800982064 /* Info.plist */,
+				B31676CB26DD85D800982064 /* LaunchScreen.storyboard */,
 				B31676CF26DD85D800982064 /* main.m */,
-				B31676F226DD85FE00982064 /* TableViewController.h */,
-				B31676F326DD85FE00982064 /* TableViewController.m */,
-				B31676F426DD85FE00982064 /* TableViewController.xib */,
 				B31676F726DD8B3600982064 /* TableViewCell.h */,
 				B31676F826DD8B3600982064 /* TableViewCell.m */,
 				B31676F926DD8B3600982064 /* TableViewCell.xib */,
-				B31676FE26DD8E3900982064 /* Member.h */,
-				B31676FF26DD8E3900982064 /* Member.m */,
-				B316771B26DD8FBF00982064 /* Facade.h */,
-				B316771C26DD8FBF00982064 /* Facade.m */,
+				B31676F226DD85FE00982064 /* TableViewController.h */,
+				B31676F326DD85FE00982064 /* TableViewController.m */,
+				B31676F426DD85FE00982064 /* TableViewController.xib */,
 			);
 			path = ClassicApp;
 			sourceTree = "<group>";
@@ -487,6 +487,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrightDigit.ClassicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ClassicApp/ClassicApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -514,6 +517,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrightDigit.ClassicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ClassicApp/ClassicApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

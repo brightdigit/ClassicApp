@@ -11,6 +11,39 @@
 
 @implementation Member
 
+static NSDictionary * memberTags = nil;
+
+static NSDictionary * getMemberTags () {
+  if (!memberTags) {    
+    memberTags = @{
+      @"Automotive" : [NSNumber numberWithInt: DefunctMemberTagAutomotive],
+      @"Baby" : [NSNumber numberWithInt: DefunctMemberTagBaby],
+      @"Beauty" : [NSNumber numberWithInt: DefunctMemberTagBeauty],
+      @"Books" : [NSNumber numberWithInt: DefunctMemberTagBooks],
+      @"Clothing" : [NSNumber numberWithInt: DefunctMemberTagClothing],
+      @"Computers" : [NSNumber numberWithInt: DefunctMemberTagComputers],
+      @"Electronics" : [NSNumber numberWithInt: DefunctMemberTagElectronics],
+      @"Games" : [NSNumber numberWithInt: DefunctMemberTagGames],
+      @"Garden" : [NSNumber numberWithInt: DefunctMemberTagGarden],
+      @"Grocery" : [NSNumber numberWithInt: DefunctMemberTagGrocery],
+      @"Health" : [NSNumber numberWithInt: DefunctMemberTagHealth],
+      @"Home" : [NSNumber numberWithInt: DefunctMemberTagHome],
+      @"Industrial" : [NSNumber numberWithInt: DefunctMemberTagIndustrial],
+      @"Jewelry" : [NSNumber numberWithInt: DefunctMemberTagJewelry],
+      @"Kids" : [NSNumber numberWithInt: DefunctMemberTagKids],
+      @"Movies" : [NSNumber numberWithInt: DefunctMemberTagMovies],
+      @"Music" : [NSNumber numberWithInt: DefunctMemberTagMusic],
+      @"Outdoors" : [NSNumber numberWithInt: DefunctMemberTagOutdoors],
+      @"Shoes" : [NSNumber numberWithInt: DefunctMemberTagShoes],
+      @"Sports" : [NSNumber numberWithInt: DefunctMemberTagSports],
+      @"Tools" : [NSNumber numberWithInt: DefunctMemberTagTools],
+      @"Toys" : [NSNumber numberWithInt: DefunctMemberTagToys]
+    };
+  }
+  
+  return memberTags;
+}
+
 static NSUInteger parseColorValue(NSString *hexString) {
   if ([[NSNull null] isEqual:hexString]) {
     return 0;
@@ -36,23 +69,45 @@ static NSUInteger parseColorValue(NSString *hexString) {
   _imageURL = dictionary[@"imageURL"];
   _email = dictionary[@"email"];
   _summary = dictionary[@"summary"];
-  _createdAt = [NSDate dateWithTimeIntervalSince1970:[createdAtString doubleValue]];
+  _createdAt = [NSDate dateWithTimeIntervalSince1970:[createdAtString doubleValue] / 1000];
   _colorValue = parseColorValue(hexString);
+
   _details = dictionary[@"details"];
-  _tags = dictionary[@"tags"];
-  
+  _tags = [Member tagsFromStrings: dictionary[@"tags"]];
+
   self = [super init];
   return self;
 }
 
-+ (UIColor *)colorFromValue:(NSUInteger) value {
++ (UIColor * _Nonnull)colorFromValue:(NSUInteger) value {
   return [UIColor colorWithRed:((CGFloat) ((value & 0xFF0000) >> 16))/255
                                             green:((CGFloat) ((value & 0xFF00) >> 8))/255
                                             blue:((CGFloat) (value & 0xFF))/255
                          alpha: 255.0];
 }
 
--(UIColor *) uiColor {
+-(UIColor * _Nonnull) uiColor {
   return [[self class] colorFromValue:self.colorValue];
+}
+
+
++(DefunctMemberTags) tagsFromStrings: (NSArray *) tags {
+  __block DefunctMemberTags current = 0;
+  
+  if ([[NSNull null] isEqual:tags]) {
+    return current;
+  }
+  
+  if (tags) {
+    NSDictionary * memberTags = getMemberTags();
+    [tags enumerateObjectsUsingBlock:^(NSString * _Nonnull tag, NSUInteger idx, BOOL * _Nonnull stop) {
+      NSNumber * value = memberTags[tag];
+      if (value) {
+        current |= value.intValue;
+      }
+    }];
+  }
+  
+  return current;
 }
 @end
