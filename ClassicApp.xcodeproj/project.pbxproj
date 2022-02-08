@@ -29,6 +29,7 @@
 		B34BF3B527B2AED3007C0DA5 /* Member.MemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3B327B2AED3007C0DA5 /* Member.MemberResponse.swift */; };
 		B34BF3B727B2AEE3007C0DA5 /* MemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3B627B2AEE3007C0DA5 /* MemberResponse.swift */; };
 		B34BF3CF27B2BFED007C0DA5 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3CE27B2BFED007C0DA5 /* Tag.swift */; };
+		B34BF3D127B2CEA9007C0DA5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3D027B2CEA9007C0DA5 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		B34BF3B327B2AED3007C0DA5 /* Member.MemberResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.MemberResponse.swift; sourceTree = "<group>"; };
 		B34BF3B627B2AEE3007C0DA5 /* MemberResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberResponse.swift; sourceTree = "<group>"; };
 		B34BF3CE27B2BFED007C0DA5 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		B34BF3D027B2CEA9007C0DA5 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				B31676FF26DD8E3900982064 /* DefunctMember.m */,
 				B316772526DDAD3700982064 /* DeprecatedMember.swift */,
 				B316772726DDAD4300982064 /* DeprecatedRepository.swift */,
+				B34BF3D027B2CEA9007C0DA5 /* Result.swift */,
 				B31676CE26DD85D800982064 /* Info.plist */,
 				B31676CB26DD85D800982064 /* LaunchScreen.storyboard */,
 				B31676CF26DD85D800982064 /* main.m */,
@@ -329,6 +332,7 @@
 				B316771D26DD8FBF00982064 /* DefunctFacade.m in Sources */,
 				B31676FA26DD8B3600982064 /* TableViewCell.m in Sources */,
 				B316772426DDA9A100982064 /* Repository.swift in Sources */,
+				B34BF3D127B2CEA9007C0DA5 /* Result.swift in Sources */,
 				B34BF3B427B2AED3007C0DA5 /* Member.UIKit.swift in Sources */,
 				B34BF3B727B2AEE3007C0DA5 /* MemberResponse.swift in Sources */,
 				B316772626DDAD3700982064 /* DeprecatedMember.swift in Sources */,
