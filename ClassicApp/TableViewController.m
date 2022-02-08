@@ -7,8 +7,6 @@
 
 #import "TableViewController.h"
 #import "TableViewCell.h"
-#import "DefunctFacade.h"
-#import "DefunctMember.h"
 #import "ClassicApp-Swift.h"
 
 @interface TableViewController ()
@@ -39,9 +37,13 @@
   return self.members.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
-  DeprecatedMember * member = [self.members objectAtIndex:indexPath.row];
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  TableViewCell *cell = [tableView
+                         dequeueReusableCellWithIdentifier:@"reuseIdentifier"
+                         forIndexPath:indexPath];
+  DeprecatedMember * member = [self.members
+                               objectAtIndex:indexPath.row];
   
   if (member && cell) {
     cell.nameLabel.text = member.firstName;
