@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B31676BF26DD85D700982064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B31676BE26DD85D700982064 /* AppDelegate.m */; };
 		B31676CA26DD85D800982064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31676C926DD85D800982064 /* Assets.xcassets */; };
 		B31676CD26DD85D800982064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31676CB26DD85D800982064 /* LaunchScreen.storyboard */; };
-		B31676D026DD85D800982064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B31676CF26DD85D800982064 /* main.m */; };
 		B31676DA26DD85D800982064 /* ClassicAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31676D926DD85D800982064 /* ClassicAppTests.m */; };
 		B31676E426DD85D800982064 /* ClassicAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31676E326DD85D800982064 /* ClassicAppUITests.m */; };
 		B31676E626DD85D800982064 /* ClassicAppUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B31676E526DD85D800982064 /* ClassicAppUITestsLaunchTests.m */; };
@@ -28,6 +26,8 @@
 		B34BF3D127B2CEA9007C0DA5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3D027B2CEA9007C0DA5 /* Result.swift */; };
 		B34BF3D327B2EF38007C0DA5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3D227B2EF38007C0DA5 /* TableViewCell.swift */; };
 		B34BF3D627B2EFBA007C0DA5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3D427B2EFBA007C0DA5 /* TableViewController.swift */; };
+		B34BF3DB27B2F980007C0DA5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3DA27B2F980007C0DA5 /* main.swift */; };
+		B34BF3DD27B2FA45007C0DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34BF3DC27B2FA45007C0DA5 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +62,9 @@
 
 /* Begin PBXFileReference section */
 		B31676BA26DD85D700982064 /* ClassicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B31676BD26DD85D700982064 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B31676BE26DD85D700982064 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B31676C926DD85D800982064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31676CC26DD85D800982064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B31676CE26DD85D800982064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B31676CF26DD85D800982064 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B31676D526DD85D800982064 /* ClassicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31676D926DD85D800982064 /* ClassicAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicAppTests.m; sourceTree = "<group>"; };
 		B31676DF26DD85D800982064 /* ClassicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +73,6 @@
 		B31676F426DD85FE00982064 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		B31676F926DD8B3600982064 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		B316771E26DD9E6000982064 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		B316772026DDA8E300982064 /* ClassicApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClassicApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		B316772126DDA8E300982064 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		B316772326DDA9A100982064 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		B316772526DDAD3700982064 /* DeprecatedMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedMember.swift; sourceTree = "<group>"; };
@@ -88,6 +84,8 @@
 		B34BF3D027B2CEA9007C0DA5 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B34BF3D227B2EF38007C0DA5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B34BF3D427B2EFBA007C0DA5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B34BF3DA27B2F980007C0DA5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B34BF3DC27B2FA45007C0DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,27 +136,25 @@
 		B31676BC26DD85D700982064 /* ClassicApp */ = {
 			isa = PBXGroup;
 			children = (
-				B31676BD26DD85D700982064 /* AppDelegate.h */,
-				B31676BE26DD85D700982064 /* AppDelegate.m */,
+				B34BF3DC27B2FA45007C0DA5 /* AppDelegate.swift */,
 				B31676C926DD85D800982064 /* Assets.xcassets */,
-				B316772026DDA8E300982064 /* ClassicApp-Bridging-Header.h */,
 				B316771E26DD9E6000982064 /* data.json */,
 				B316772526DDAD3700982064 /* DeprecatedMember.swift */,
 				B316772726DDAD4300982064 /* DeprecatedRepository.swift */,
-				B34BF3D027B2CEA9007C0DA5 /* Result.swift */,
 				B31676CE26DD85D800982064 /* Info.plist */,
 				B31676CB26DD85D800982064 /* LaunchScreen.storyboard */,
-				B31676CF26DD85D800982064 /* main.m */,
+				B34BF3DA27B2F980007C0DA5 /* main.swift */,
 				B34BF3B327B2AED3007C0DA5 /* Member.MemberResponse.swift */,
 				B316772126DDA8E300982064 /* Member.swift */,
 				B34BF3B227B2AED3007C0DA5 /* Member.UIKit.swift */,
 				B34BF3B627B2AEE3007C0DA5 /* MemberResponse.swift */,
 				B316772326DDA9A100982064 /* Repository.swift */,
+				B34BF3D027B2CEA9007C0DA5 /* Result.swift */,
+				B34BF3D227B2EF38007C0DA5 /* TableViewCell.swift */,
 				B31676F926DD8B3600982064 /* TableViewCell.xib */,
+				B34BF3D427B2EFBA007C0DA5 /* TableViewController.swift */,
 				B31676F426DD85FE00982064 /* TableViewController.xib */,
 				B34BF3CE27B2BFED007C0DA5 /* Tag.swift */,
-				B34BF3D227B2EF38007C0DA5 /* TableViewCell.swift */,
-				B34BF3D427B2EFBA007C0DA5 /* TableViewController.swift */,
 			);
 			path = ClassicApp;
 			sourceTree = "<group>";
@@ -314,14 +310,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B31676BF26DD85D700982064 /* AppDelegate.m in Sources */,
 				B316772426DDA9A100982064 /* Repository.swift in Sources */,
 				B34BF3D127B2CEA9007C0DA5 /* Result.swift in Sources */,
 				B34BF3B427B2AED3007C0DA5 /* Member.UIKit.swift in Sources */,
+				B34BF3DD27B2FA45007C0DA5 /* AppDelegate.swift in Sources */,
 				B34BF3D327B2EF38007C0DA5 /* TableViewCell.swift in Sources */,
 				B34BF3B727B2AEE3007C0DA5 /* MemberResponse.swift in Sources */,
 				B316772626DDAD3700982064 /* DeprecatedMember.swift in Sources */,
-				B31676D026DD85D800982064 /* main.m in Sources */,
+				B34BF3DB27B2F980007C0DA5 /* main.swift in Sources */,
 				B34BF3B527B2AED3007C0DA5 /* Member.MemberResponse.swift in Sources */,
 				B316772826DDAD4300982064 /* DeprecatedRepository.swift in Sources */,
 				B34BF3CF27B2BFED007C0DA5 /* Tag.swift in Sources */,
@@ -509,7 +505,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrightDigit.ClassicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClassicApp/ClassicApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -539,7 +534,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrightDigit.ClassicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ClassicApp/ClassicApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
