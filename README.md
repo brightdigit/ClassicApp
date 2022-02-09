@@ -17,7 +17,11 @@ Branches represent each step in a Piecemeal process of moving your app over:
 
 ### Articles
 
-* [**Upgrading Old Apps: The Dirty Job of iOS Development**](https://brightdigit.com/blog/2021/03/26/upgrading-old-ios-apps/) at *BrightDigit*
+#### [**Upgrading Old Apps: The Dirty Job of iOS Development**](https://brightdigit.com/blog/2021/03/26/upgrading-old-ios-apps/) at *BrightDigit*
+
+> Upgrading an iOS app can be time-consuming. It involves the process of refactoring, rewriting, and replacing some or all of the app’s code.
+> 
+> This can introduce risk and uncertainty. However, it’s an opportunity to ensure your users are getting the best experience possible from your app. Over a long enough time, every app needs to be upgraded, whether to support the newer versions of iOS or take advantage of the latest features., Unfortunately, because the process is so often difficult, headache-inducing, and complicated, it is rarely looked forward to, and often avoided. 
 
 ### Podcast Episodes
 
